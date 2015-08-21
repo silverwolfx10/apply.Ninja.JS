@@ -1,15 +1,15 @@
 ### $apply
 
-Chama uma funcao determinando valores fornecido e um array mas a funcao curry
+acilita a interacao com um array, permitindo o avancar e retroceder uma colecao de dados
 
 ```javascript
-Ninja.service('$add', ['$curry'], function ($curry) {
-  return $curry(function (a, b) {
-    return a + b;
-  });
-});
-
-Ninja(['$add', '$apply'], function ($add, $apply) {
-  $apply($add, ['hello', ' cleber.programmer']);
+Ninja(['$iterator'], function ($iterator) {
+  
+  var i = $iterator([1, 2, 3, 4, 5]);
+  
+  while(i.hasNext()) {
+    console.log(i.next());
+  }
+  
 });
 ```
