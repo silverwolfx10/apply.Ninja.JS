@@ -1,6 +1,6 @@
 ### $apply
 
-acilita a interacao com um array, permitindo o avancar e retroceder uma colecao de dados
+Facilita a interacao com um array, permitindo o avancar e retroceder uma colecao de dados
 
 ```javascript
 Ninja(['$iterator'], function ($iterator) {
