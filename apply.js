@@ -11,7 +11,7 @@
  *        $apply($add, ['hello ', 'cleber.programmer']);
  * 
  */
-Ninja.service('$apply', ['$curry'], function ($curry) {
+Ninja.module('$apply', ['$curry'], function ($curry) {
   
   /**
    * Chama uma funcao determininado valores fornecido de uma array
